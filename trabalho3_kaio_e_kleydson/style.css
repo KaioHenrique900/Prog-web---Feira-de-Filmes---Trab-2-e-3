@@ -1,0 +1,595 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica", sans-serif;
+}
+body{
+	background-color: #1C1C1C;
+	overflow-x: hidden;
+	color: white;
+}
+
+h1{
+	padding-left: 8px;
+}
+
+label{
+	font-size: 5px;
+}
+
+.divLogin{
+	text-align: center;
+	display: inline-block;
+	top: 25%;
+	position: relative;
+	background-color: #1C1C1C;
+	width: 250px;
+	max-width: 250px;
+	padding: 20px 50px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.divLogin h3{
+	margin: 0;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	padding-left: 6px;
+	font-size: 17px;
+	text-align: left;
+	color: #DCDCDC;
+}
+
+.erro{
+	color: red;
+}
+
+.inputLogin{
+	overflow: hidden;
+	display: block;
+	margin-bottom: 10px;
+	font-size:16px;
+	padding: 3px 8px;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid darkred;
+	background-color: #1C1C1C;
+	color: #DCDCDC;
+}
+
+.inputLogin:focus {
+  border-bottom: 1px solid #B22222;
+  outline: 0;
+}
+
+.buttonEntrar{
+	background-color: #B22222;
+	border: none;
+	font-size:16px;
+	color: #F5FFFA;
+	display: inline-block;
+	width: 100%;
+	padding: 3px 8px;
+	margin-bottom: 10px;
+}
+
+.buttonEntrar:hover{
+	background-color: darkred;
+	cursor: pointer;
+}
+
+.btnLoginCadastro{
+	padding: 0px;
+	background-color: transparent;
+	border: none;
+	color: white;
+}
+
+.btnLoginCadastro:hover {
+	cursor: pointer;
+	color: red;
+}
+
+.logoLogin{
+	filter: invert(100%);
+	height: 80px;
+	margin: 1px;
+}
+
+.header{
+	background-color: #B22222;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+
+.footer{
+	background-color: #B22222;
+	padding: 15px;
+	text-align: center;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+}
+
+li{
+	float: left;
+	font-size: 16px;
+}
+
+li a{
+	display: block;
+	padding: 14px 16px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
+
+li a:visited{
+	color: white;
+}
+
+li a:hover{
+	color: #FA8072;
+	background-color: #8B0000;
+}
+
+img{
+	height: 100px;
+}
+
+.nav{
+	float: left;
+	width: 100%;
+	height: 300px;
+	background-color: lightblue;
+	padding: 20px;
+}
+
+.header_toolbar{
+	padding-left: 10px;
+	display: inline-block;
+}
+
+.header_name_user{
+	padding-right: 20px;
+	padding-top: 15px;
+	float: right;
+	display: inline-block;
+}
+
+.header_slogan{
+	font-size: 20px;
+	font-wight: bold;
+}
+
+.header_content{
+	padding: 8px;
+	text-align: center;
+	background-color: #FA8072;
+}
+
+.capa_filme{
+	height: 250px;
+	display: block;
+	text-align: center;
+}
+
+.capa_filme_consulta{
+	height: 200px;
+	display: inline-block;
+	text-align: center;
+}
+
+.content1, .content2{
+	width: 47%;
+	margin-left: 20px;
+	display: inline-block;
+	vertical-align: bottom;
+	text-align: center;
+	padding: 70px 0;
+}
+
+.content1{
+	float: left;
+	margin-left: 20px;
+	display: inline-block;
+}
+
+.content1 p, .content2 p{
+	padding-bottom: 60px;
+}
+
+.content2{
+	float: right;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+.div_dados_consulta{
+	width: 50%;
+	float: left;
+}
+
+.dados{
+	display:  block;
+	text-align: left;
+	padding-bottom: 5px;
+}
+
+.titulo_filme{
+	overflow: hidden;
+	text-align: left;
+	white_space: nowrap;
+	padding-top: 8px;
+	padding-left: 3px;
+	text-overflow: ellipsis;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.filme_content{
+	padding: 8px;
+	padding-bottom: 50px;
+	float: left;
+}
+
+.article1{
+	text-align: center;
+}
+
+.article1 label{
+	font-size: 16px;
+}
+
+.article2{
+	text-align: center;
+	margin-top: 25%;
+}
+
+.div_cadastro{
+	text-align: center;
+	display: inline-block;
+}
+
+.article1 input, textarea{
+	overflow: hidden;
+	display: block;
+	width: 400px;
+	border: none;
+  background-color: #1C1C1C;
+ 	color: white;
+ 	border-bottom: 1px solid #B22222;
+ 	margin-bottom: 13px;
+	font-size:16px;
+	padding: 3px 8px;
+}
+
+.article1 textarea{
+	overflow: auto;
+}
+
+.article1 input, textarea:focus{
+	border-bottom: 1px solid #B22222;
+  outline: 0;
+}
+
+.article1 input[type="file"]{
+	border: none;
+	margin-top: 4px;
+	margin-bottom: 6px;
+}
+
+.article1 input[type="date"]{
+	width: 56%;
+	display: inline-block;
+}
+
+.article1 label{
+
+}
+
+.article3{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.article3 input{
+	overflow: hidden;
+	width: 250px;
+	border: 1px solid #B22222;
+	border-radius: 3px;
+	background-color: #1C1C1C;
+	color: white;
+	font-size:15px;
+	padding: 5px 8px;
+}
+
+.btnSearch, .btnSAll{
+	margin-right: 5px;
+	padding: 5px 8px;
+	font-size:15px;
+	display: inline-block;
+}
+
+.btnSearch{
+	background-color: #FF6347;
+	border: 1px solid #FF6347;
+}
+
+.btnSearch:hover{
+	background-color: #F7543B;
+	border: 1px solid #F7543B;
+}
+
+.btnSAll{
+	background-color: #FA8072;
+	border: 1px solid #FA8072;
+}
+
+.btnSAll:hover{
+	background-color: #EB7265;
+	border: 1px solid #EB7265;
+}
+
+.form_cadastro{
+	padding: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.divp{
+	max-width: 50%;
+	margin: auto;
+}
+
+.divp p{
+	text-align: left;
+	font-size: 18px;
+	text-align: justify;
+  text-justify: inter-word;
+}
+
+.sinopse{
+  	height: 150px;
+  	box-sizing: border-box;
+  	resize: none;
+  	font-family: Arial;
+}
+
+input[type="submit"]{
+	background-color: #FF6347;
+	border: none;
+	padding: 4px;
+	width: 48%;
+	margin-right: 0;
+	display: inline-block;
+	border-radius: 0px;
+}
+
+input[type="submit"]:hover{
+	cursor: pointer;
+	background-color: #FF0000;
+}
+
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td, th, table{
+}
+
+td{
+	text-align: left;
+	vertical-align: top;
+	padding: 15px;;
+	max-width: 400px;
+	min-width: 50px;
+}
+
+th{
+	height: 50px;
+}
+
+tr:nth-child(even) {background-color: #4F4F4F;}
+
+.logo{
+	height: 130px;
+}
+
+
+.img_logo{
+	height: 30px;
+	padding: 5px;
+}
+
+.img_logo:hover{
+	opacity: 0.8;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+footer{
+	background-color: darkred;
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 12px;
+	margin-top: 10px;
+	bottom: 0;
+	position: relative;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+	background-color: #B22222;
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+	color: #FA8072;
+	background-color: #8B0000;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #B22222;
+  border: none;
+  font-size: 16px;
+}
+
+.dropbtn:hover{
+	color: #FA8072;
+	background-color: #8B0000;
+}
+
+.rounded-icon-delete{
+	background: #ef5350;
+	font-size: 20px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 15px;
+  margin: 3px;
+  color: white;
+}
+
+.rounded-icon-edit{
+	background: #ffa726;
+	font-size: 20px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 15px;
+  margin: 3px;
+  color: white;
+}
+
+.btn-icon{
+	background-color: transparent;
+	border: none;
+	padding: 0;
+}
+
+
+.btnModalBox {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btnModalBox:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 25%;
+  top: 10%;
+  width: 50%;
+  height: 50%;
+  overflow: hidden; /* Enable scroll if needed */
+  padding: 0px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #424242;
+  margin: 3px 3px; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #424242;
+  width: 100%;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin-right: 3	px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}
